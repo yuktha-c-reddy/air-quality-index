@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    background-image: url("https://c1.wallpaperflare.com/preview/412/91/707/cloud-sky-sun-sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8;
+    padding: 20px;
+    color: #f5f1f1;
+    min-height: 100vh;
+}
+
+form {
+    padding-top: 4cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.5em;
+    color: #7d4949;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    width: 250px;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #7d4949;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    width: 250px;
+    max-width: 100%;
+}
+
+.result {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #f5f1f1;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.result h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-align: center;
+    color: #5b0d0d;
+    font-style: italic;
+}
+
+.result h1 span {
+    font-size: 20px;
+    color: #f5f1f1;
+    font-family: monospace;
+}
+
+.head {
+    position: fixed;
+    left: 0px;
+    right: 2px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+
+    color: rgb(232, 236, 239);
+    background: rgba(55, 48, 35, 0.5);
+}
+
+@media (min-width : 800px) {
+    .head {
+        left: 10px;
+        right: 5px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 3em;
+    }
+
+    .result {
+        color:#f5f1f1 ;
+        font-family: monospace;
+    }
+
+    .result h1 {
+        color:#563a3a;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .result h1 span {
+        color:#f5f1f1 ;
+        font-family: monospace;
+    }
+}
